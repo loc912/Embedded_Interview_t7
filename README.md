@@ -15,9 +15,9 @@
     - VD: typedef int typeInt 
     --> typeInt: được định nghĩa lại nhưng bản chất vẫn là kiểu dữ liệu int.
 
-### 3. Enum
+### 3. Enum </summary>
 
-      ** kiểu Enum: 
+      + kiểu Enum: 
             // Định nghĩa kiểu enum với tên là "Weekday"
             enum Weekday {
                 Monday,
@@ -29,5 +29,5 @@
                 Sunday
             };
           
-      ** Gía trị của các phần tử đầu tiên sẽ bằng 0 nếu không gán giá trị ban đầu và giá trị của phần tử sau sẽ tăng lên 1 đơn vị so với phần tử đứng trước.
+      + Gía trị của các phần tử đầu tiên sẽ bằng 0 nếu không gán giá trị ban đầu và giá trị của phần tử sau sẽ tăng lên 1 đơn vị so với phần tử đứng trước.
 </details>    
