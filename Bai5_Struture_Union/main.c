@@ -1,6 +1,17 @@
 #include <stdio.h> 
 #include <stdint.h>
 
+
+// kiểu struct
+typedef struct{
+    uint8_t x[13];
+    uint16_t y[15];
+    uint32_t z[10];
+    uint64_t k[3];      
+}toaDo;     
+
+
+// kiểu Union
 typedef union {
     uint8_t var1;
     uint16_t var2[10];
