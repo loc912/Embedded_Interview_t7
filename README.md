@@ -240,7 +240,7 @@ printf("Tong %d\n",ptr(4,5));
 
   `Giai đoạn liên kết (Linker)`
 
-![image]([https://github.com/loc912/Embedded_Interview_t7/issues/1#issue-1824173941]
+![alt text]([https://github.com/loc912/Embedded_Interview_t7/issues/1#issue-1824173941]
 ### 2. Giai đoạn tiền xử lý – Preprocessor
 - Giai đoạn này sẽ thực hiện:
   **+ Nhận mã nguồn**
