@@ -88,7 +88,8 @@ printf("Tong %d\n",ptr(4,5));
 
 <details> <summary> Chapter 3: MEMORY ALLOCATION </summary>
 
-![Alt text](image.png)
+![Alt text](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/eb10e28b-ef36-400f-9685-94bec10225aa)
+
 ### 1. Text </summary>
 
   - Quyền truy cập chỉ Read và nó chứa lệnh để thực thi nên tránh sửa đổi instruction
