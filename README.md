@@ -263,13 +263,23 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 </details>
 
 <details> <summary> Chapter 7: MACRO </summary>
-
+### 1. Định nghĩa macro 
   - Chúng ta dịnh nghĩa macro bằng cách dùng lệnh `#define`
   - Trong quá trình tiền xử lí (pre-processor), Macro định nghĩa cái gì thì sẽ thay thế bằng chính cái đó trong quá trình tiền xử lý
   - VD:
 ```c
     #define PI 3.145654 // trong quá trình Preprocessor khi gặp bất kỳ biến `PI` nào thì sẽ được thay bằng `3.145654`
 ```
+### 2.Khái niệm Ifndef,endif
+   
+
+    ```c
+     #define STM32 // macrio STM32
+
+     #ifndef STM32 // nếu đã define STM32 thì câu lệnh bên trong không được thực hiện 
+     int a=10;
+     #endif       // dùng để kết thúc định nghĩa
+    ```
 </details>
 
 <details> <summary> Chapter 8: FUNCTION </summary>
