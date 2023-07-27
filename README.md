@@ -272,14 +272,13 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 ```
 ### 2.Khái niệm Ifndef,endif
    
-
-    ```c
+```c
      #define STM32 // macrio STM32
 
      #ifndef STM32 // nếu đã define STM32 thì câu lệnh bên trong không được thực hiện 
      int a=10;
      #endif       // dùng để kết thúc định nghĩa
-    ```
+```
 </details>
 
 <details> <summary> Chapter 8: FUNCTION </summary>
