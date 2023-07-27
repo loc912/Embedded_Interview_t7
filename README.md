@@ -263,6 +263,7 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 </details>
 
 <details> <summary> Chapter 7: MACRO </summary>
+  
 ### 1. Định nghĩa macro 
   - Chúng ta dịnh nghĩa macro bằng cách dùng lệnh `#define`
   - Trong quá trình tiền xử lí (pre-processor), Macro định nghĩa cái gì thì sẽ thay thế bằng chính cái đó trong quá trình tiền xử lý
