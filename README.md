@@ -212,11 +212,12 @@ printf("Tong %d\n",ptr(4,5));
 
 ### 1. Struct
 
-- Bộ nhớ của một cấu trúc `struct` trong C được tính bằng tổng kích thước của tất cả các `members `của cấu trúc đó, cộng thêm các `padding `nếu có.
+- Bộ nhớ của một cấu trúc `struct` được tính bằng tổng kích thước của tất cả các `members `của cấu trúc đó, cộng thêm các `padding `nếu có.
   
 ### 2. Union
 
-- Bộ nhớ của một `union `trong ngôn ngữ lập trình C được tính bằng kích thước của thành viên lớn nhất của `union` đó.
+- Bộ nhớ của một `union` được tính bằng kích thước bằng kích thước kiến trúc vi xử lý. 
+- EX: `Môi trường Windows 32 bit: 4 bytes` còn `Môi trường Windows 64 bit: 8 bytes`
 
 ### 3. So sánh Struct và Union
 
