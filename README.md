@@ -271,3 +271,7 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
     #define PI 3.145654 // trong quá trình Preprocessor khi gặp bất kỳ biến `PI` nào thì sẽ được thay bằng `3.145654`
 ```
 </details>
+
+<details> <summary> Chapter 8: FUNCTION </summary>
+
+</details>
