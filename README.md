@@ -285,3 +285,79 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 <details> <summary> Chapter 8: FUNCTION </summary>
 
 </details>
+
+
+
+<details>
+<summary><h2> EMBEDDED IN AUTOMOTIVE</h2></summary>
+
+##
+
+<details> 
+<summary>L01: SPI</summary>
+
+### 1.Giao thức SPO
+
+**SPI** (Serial Peripheral Interface) là một giao tiếp nổi tiếng và phổ biến trong lĩnh vực điện tử và vi điều khiển nhúng. SPI cho phép truyền dữ liệu giữa một vi điều khiển chính (thường được gọi là Master) và các thiết bị ngoại vi (thường được gọi là Slave) một cách nhanh chóng và đồng bộ. SPI là chuẩn giao tiếp song song, có thể truyền và nhận cùng một thời điểm 
+
+ **Mối quan hệ Master - Slave**
+  - Master control mọi hoạt động của Slave.
+  -	Chỉ có Master có thể tạo xung clock.
+  -	Master khống chế tốc độ truyền còn slave quyết định tốc độ xung clock và thời điểm gửi vì slave thường là những sensor có sẵn cấu hình không chỉnh sửa được.
+### 2.Ưu và nhược điểm của giao thức SPI:
+
+**Ưu điểm**
+-	SPI có tốc độ giao tiếp cao hơn I2C , USART.
+-	SPI cho phép kết nối nhiều thiết bị (Slaves) với một vi điều khiển chính (Master) bằng cách sử dụng các dây chọn riêng (chip select).
+-	SPI là giao thức truyền song song: hỗ trợ truyền và nhận dữ liệu đồng thời, giúp tối ưu hóa hiệu suất truyền dữ liệu.
+-	Có đường data riêng giữa giử và nhận.
+-	Có đường xung clock riêng.
+-	Không bị nhiểu nhiều.
+
+**Nhược điểm**
+-	SPI yêu cầu nhiều dây kết nối hơn so với một số giao thức khác như I2C hoặc UART. Nó cần ít nhất 4 dây (MISO, MOSI, SCK, SS) và thậm chí có thể cần nhiều hơn nếu bạn kết nối nhiều thiết bị.
+-	Độ dài cáp bị giới hạn ( trong thực tế dưới 1m). 
+
+## 3.2.	Cách truyền và nhận dữ liệu và các chế độ hoạt động của SPI:
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/43f66386-e44c-4398-8937-f87a1048ca5d)
+
+
+
+** SPI gồm có 4 chân tín hiệu **
+  - SCLK: Serial Clock.
+  - MOSI: Master Out, Slave In.
+  - MISO: Master In, Slave Out.
+  - SS: Slave Select.
+    * SS có 2 chế độ 0 (active) và 1 (inactive). Nếu SS kéo xuống mức 0 thì nó cho phép master giao tiếp với slave. Nếu SS mức 1 thì không đc giao tiếp với slave.
+
+**Cách truyền và nhận dữ liệu**
+
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/03b58055-461f-4f22-9f05-590d3b300d43)
+
+-	Mỗi chip Master hay Slave sẽ có một thanh ghi dữ liệu 8 bit chứa dữ liệu cần gửi đi hoặc dữ liệu nhận về.
+-	Cứ mỗi xung nhịp do Master tạo ra trên chân SCLK, một bit trong thanh ghi dữ liệu của Master được truyền qua Slave trên đường MOSI, đồng thời một bit trong thanh ghi dữ liệu của Slave cũng được truyền qua cho Master trên đường MISO.
+
+**Các chế độ hoạt động **
+-	Có 4 chế độ truyền nhận khác nhau: 
+
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/142e3eb5-0474-4f4e-973a-3aacb93a4f83)
+
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/c5d25a84-26e4-4bcf-8025-21c700656d17)
+
+-	CPOL (Clock Polarity): Tham số CPOL xác định trạng thái ban đầu của tín hiệu đồng hồ (SCK - Serial Clock) khi không có truyền dữ liệu. CPOL có hai giá trị chính: 
+  + Nếu CPOL bằng 0 (CPOL = 0): SCK bắt đầu ở mức logic 0 (thấp) khi không có truyền dữ liệu. Trong trường hợp này, tín hiệu SCK tăng lên (rising edge) để đánh latched dữ liệu. 
+  + Nếu CPOL bằng 1 (CPOL = 1): SCK bắt đầu ở mức logic 1 (cao) khi không có truyền dữ liệu. Trong trường hợp này, tín hiệu SCK giảm xuống (falling edge) để đánh latched dữ liệu.
+
+-	CPHA (Clock Phase): Tham số CPHA xác định lúc nào dữ liệu nên được lấy mẫu hoặc trả về trên các chân MOSI (Master Out Slave In) và MISO (Master In Slave Out). CPHA có hai giá trị chính:
+  + Nếu CPHA bằng 0 (CPHA = 0): Dữ liệu nên được lấy mẫu tại lúc sợi đồng hồ thụ động (falling edge) và trả về tại lúc sợi đồng hồ tích cực (rising edge).
+  + Nếu CPHA bằng 1 (CPHA = 1): Dữ liệu nên được lấy mẫu tại lúc sợi đồng hồ tích cực (rising edge) và trả về tại lúc sợi đồng hồ thụ động (falling edge).
+
+
+</details>
+
+##
+
+
+
+
+
