@@ -1,5 +1,6 @@
-# C PROGRAMMING LANGUAGE
 
+<details>
+<summary><h2>C PROGRAMMING LANGUAGE</h2></summary>
 <details> <summary> Chapter 1: C BASIC </summary> 
   
 ### 1. Variable
@@ -285,13 +286,13 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 <details> <summary> Chapter 8: FUNCTION </summary>
 
 </details>
-
+</details>
 
 
 <details>
 <summary><h2> EMBEDDED IN AUTOMOTIVE</h2></summary>
 
-##
+
 
 <details> 
 <summary>SERIAL PERIPHERAL INTERFACE (SPI)</summary>
@@ -355,7 +356,7 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 
 </details>
 
-##
+
 
 
 
