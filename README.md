@@ -294,9 +294,9 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 ##
 
 <details> 
-<summary>L01: SPI</summary>
+<summary>SERIAL PERIPHERAL INTERFACE (SPI)</summary>
 
-### 1.Giao thức SPO
+### 1.Giao thức SPI
 
 **SPI** (Serial Peripheral Interface) là một giao tiếp nổi tiếng và phổ biến trong lĩnh vực điện tử và vi điều khiển nhúng. SPI cho phép truyền dữ liệu giữa một vi điều khiển chính (thường được gọi là Master) và các thiết bị ngoại vi (thường được gọi là Slave) một cách nhanh chóng và đồng bộ. SPI là chuẩn giao tiếp song song, có thể truyền và nhận cùng một thời điểm 
 
