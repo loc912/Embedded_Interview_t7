@@ -356,6 +356,36 @@ Kết thúc quá trình tất cả các đối tượng được liên kết l�
 
 </details>
 
+<details> 
+<summary> Inter-Integrated Circuit (I2C)</summary>
+
+### 1. Lý thuyết I2C
+
+**Sơ đồ giao tiếp giữa các Master với Slave:**
+
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/ccd8e6c2-9f59-41b0-a731-a8047abe3eef)
+
+
+**I2C** (Inter – Integrated Circuit) là 1 giao thức giao tiếp nối tiếp đồng bộ được sử dụng để truyền nhận dữ liệu giữa các IC với nhau chỉ sử dụng hai đường truyền tín hiệu
+
+
+  - I2C chỉ sử dụng hai dây để truyền dữ liệu giữa các thiết bị:
+    + SDA (Serial Data) - đường truyền cho master và slave để gửi và nhận dữ liệu. Tại một thời điểm SDA chỉ có truyển và nhận.
+    + SCL (Serial Clock) - đường truyền xung clock.
+  - I2C là một giao thức truyền thông nối tiếp, vì vậy dữ liệu được truyền từng bit dọc theo một đường duy nhất (đường SDA)
+  - Khi Master và Slave không giao tiếp với nhau, chân SDA và SCL luôn ở mức cao (có điện trở kéo lên).
+
+### 2.Cách hoạt động của I2C
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/7ca1efa3-9983-4dea-ac6e-6e06c7b7cb7d)
+
+
+### 3.Các bước truyền dữ liệu :
+
+![image](https://github.com/loc912/Embedded_Interview_t7/assets/138952987/dbf6ebb0-aae0-440a-9d21-5c5778ef5df4)
+
+
+</details>
+
 
 
 
